@@ -26,9 +26,9 @@ const PlanYourTrip = () => {
 
   return (
     <div id="bron" className=" py-20">
-      <div className="w-full max-w-5xl mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-8 ">
+      <div className="w-full max-w-5xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-8 ">
         {/* Left Section */}
-        <div className="flex flex-col justify-start items-start">
+        <div className="flex flex-col justify-start items-start ">
           <h2 className="text-xl md:text-2xl  text-black mb-4">
             Orzuingizdagi sayohatni rejalashtiring
           </h2>
