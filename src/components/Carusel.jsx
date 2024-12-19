@@ -53,10 +53,10 @@ export default function Carusel() {
       <div className="bg-white py-20">
         {/* Title Section */}
         <div className="text-center  text-yellow-500 mb-10">
-          <h2 className="  mb-2">
+          <h2 className="text-lg  mb-2">
             Bizning mashhur manzillarimiz
           </h2>
-          <p className="text-gray-900 text-lg md:text-xl">
+          <p className="text-gray-900 text-xl md:text-2xl">
             Ushbu yo'nalishlar bilan haqiqatan ham o'ziga xos qiladigan
             go'zallik, madaniyat va tajribalarni kashf eting.
           </p>
@@ -80,14 +80,14 @@ export default function Carusel() {
                 spaceBetween: 10,
               },
               1024: {
-                slidesPerView: 6,
+                slidesPerView: 5,
                 spaceBetween: 10,
               },
             }}
             modules={[Pagination]}
             className="mySwiper">
             {destinations.map((destination, index) => (
-              <SwiperSlide className="container mx-auto px-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6">
+              <SwiperSlide key={index} className="container mx-auto px-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6">
                 <CaruselCard
                   key={index}
                   destination={destination}

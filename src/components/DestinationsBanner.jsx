@@ -42,25 +42,25 @@ const destinations = [
 
 const DestinationsBanner = () => {
   return (
-    <div className="py-10">
+    <div className=" py-10">
       {/* Section Title */}
-      <div className="container mx-auto px-4 mb-10">
+      <div className="w-full max-w-4xl mx-auto px-4 mb-10">
         <h2 className="text-2xl md:text-3xl">Maqsadlarni osongina o'rganing</h2>
       </div>
 
       {/* Destination Items */}
-      <div className="container mx-auto px-4">
+      <div className="w-full max-w-4xl mx-auto px-4">
         {destinations.map((destination, index) => (
           <div
             key={index}
             className="mb-8 flex flex-col md:flex-row items-center bg-white   overflow-hidden"
           >
             {/* Image */}
-            <div className="md:w-1/4 p-2 text-center">
+            <div className="w-full md:w-1/3 p-2 text-center">
               <img
                 src={destination.image}
                 alt={destination.title}
-                className="w-full h-32  object-cover md:h-full rounded-xl"
+                className="w-full h-[190px]  object-cover md:h-full rounded-xl"
               />
             </div>
 

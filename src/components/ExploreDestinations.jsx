@@ -28,14 +28,16 @@ const destinations = [
 
 const ExploreDestinations = () => {
   return (
-    <div className="bg-gray-100 py-10">
+    <div id='about' className="bg-gray-100 py-20">
       {/* Title Section */}
-      <div className="text-center mb-10">
-        <h2 className="text-3xl md:text-4xl font-bold">Bizning manzillarimizni kashf eting</h2>
-        <p className="text-gray-600 mt-2">
+      <div className="text-center  text-yellow-500 mb-10 ">
+          <h2 className="mb-3 text-lg">
+          Bizning manzillarimizni kashf eting
+          </h2>
+          <p className="text-gray-900 text-lg md:text-2xl font-semibold">
           Dubay, Turkiya, Sharm El Sheyhni biz bilan kashf eting
-        </p>
-      </div>
+          </p>
+        </div>
 
       {/* Cards Grid */}
       <div className="container mx-auto px-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
@@ -58,13 +60,13 @@ const ExploreDestinations = () => {
               <p className="text-gray-700 mb-6">{destination.description}</p>
 
               {/* Buttons */}
-              <div className="flex justify-between">
+              <div className="flex flex-wrap gap-2 justify-between">
                 <button className="bg-yellow-500 text-white px-4 py-2 rounded-lg font-semibold hover:bg-yellow-600 transition">
                   Ko'proq bilish
                 </button>
-                <button className="bg-gray-200 text-black px-4 py-2 rounded-lg font-semibold hover:bg-gray-300 transition">
+                <a href='#bron2' className="bg-gray-200 text-black px-4 py-2 rounded-lg font-semibold hover:bg-gray-300 transition">
                   Band qilish
-                </button>
+                </a>
               </div>
             </div>
           </div>
