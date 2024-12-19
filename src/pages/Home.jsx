@@ -3,6 +3,7 @@ import Banner from '../components/Baner'
 import Carusel from '../components/Carusel'
 import CaruselCard from '../components/CaruselCard'
 import DestinationsBanner from '../components/DestinationsBanner'
+import ExploreDestinations from '../components/ExploreDestinations'
 
 const Home = () => {
   return (
@@ -10,6 +11,7 @@ const Home = () => {
       <Banner/>
       <Carusel/>
       <DestinationsBanner/>
+      <ExploreDestinations/>
     </div>
   )
 }
