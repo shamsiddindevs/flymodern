@@ -55,7 +55,7 @@ const PricingPlans = () => {
         {plans.map((plan, index) => (
           <div
             key={index}
-            className="bg-white text-center rounded-lg shadow-md hover:shadow-lg transition duration-300">
+            className="bg-gray-100 text-center rounded-lg shadow-md hover:shadow-lg transition duration-300 grid grid-rows-subgrid row-span-2 gap-5">
             {/* Header */}
             <div className="bg-yellow-500 text-white text-center py-6 rounded-t-lg">
               <h3 className="text-xl ">{plan.title}</h3>
@@ -64,12 +64,12 @@ const PricingPlans = () => {
             </div>
 
             {/* Features */}
-            <div className="p-6 bg-gray-100 ">
+            <div className="p-6 bg-gray-100 flex flex-col justify-between items-center">
               <ul className="text-gray-600 space-y-2 mb-6 list-none">
                 {plan.features.map((feature, index) => (
                   <li
                     key={index}
-                    className=" items-center text-center ">
+                    className=" items-center text-center pb-3 font-semibold">
                     
                     {feature}
                   </li>
