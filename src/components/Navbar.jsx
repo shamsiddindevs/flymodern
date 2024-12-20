@@ -93,11 +93,11 @@ const Navbar = () => {
               <img
                 src={lang=="uz" ? uzb : lang=="ru" ? russian : eng}
                 alt="Language"
-                className="h-5"
+                className="h-8"
               />
               {isRotate ? (
                     <svg
-                      className="h-4 w-4"
+                      className="h-5 w-5"
                       fill="currentColor"
                       viewBox="0 0 20 20"
                       xmlns="http://www.w3.org/2000/svg">
@@ -109,7 +109,7 @@ const Navbar = () => {
                     </svg>
                   ) : (
                     <svg
-                      className="h-4 w-4 rotate-180"
+                      className="h-5 w-5 rotate-180"
                       fill="currentColor"
                       viewBox="0 0 20 20"
                       xmlns="http://www.w3.org/2000/svg">
@@ -258,7 +258,7 @@ const Navbar = () => {
                   <img
                     src={lang=="uz" ? uzb : lang=="ru" ? russian : eng} 
                     alt="Language"
-                    className="h-5"
+                    className="h-10"
                   />
                   {isRotate ? (
                     <svg
@@ -288,13 +288,13 @@ const Navbar = () => {
                 </button>
                 <ul
                   id="language2"
-                  className="absolute right-0 mt-2 w-14 bg-white shadow-lg rounded-md hidden ">
+                  className="absolute right-0 mt-2 w-20  bg-white shadow-lg rounded-md hidden ">
                   <li onClick={()=>changeLanguage("uz")}  className="px-4 py-2 hover:bg-gray-100 cursor-pointer">
                     <img
 
                       src={uzb}
                       alt="Language"
-                      className="h-5"
+                      className="h-10 mx-auto"
                     />
                   </li>
                   <li  onClick={()=>changeLanguage("ru")}
@@ -302,7 +302,7 @@ const Navbar = () => {
                     <img
                       src={russian}
                       alt="Language"
-                      className="h-5"
+                      className="h-10 mx-auto"
                     />
                   </li>
                   <li onClick={()=>changeLanguage("en")}
@@ -310,7 +310,7 @@ const Navbar = () => {
                     <img
                       src={eng}
                       alt="Language"
-                      className="h-5"
+                      className="h-10 mx-auto"
                     />
                   </li>
                 </ul>
