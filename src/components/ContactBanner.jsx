@@ -6,6 +6,59 @@ const ContactBanner = () => {
   const toggleModal = () => {
     setIsOpen(!isOpen);
   };
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    tel: "",
+    message: "",
+  });
+
+  const handleChange = (e) => {
+    setFormData({
+      ...formData,
+      [e.target.name]: e.target.value,
+    });
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    const botToken = "7986038457:AAG-EENrQ4wIenJxrWnmnzbTXQYlKhJMpOQ"; // Replace with your bot token
+    const chatId = "-1002474691071"; // Replace with your chat/channel ID
+
+    const message = `
+        📝 **New Booking Request**
+        - **Name:** ${formData.name}
+        - **Email:** ${formData.email}
+        - **Tel:** ${formData.tel}
+        - **Message:** ${formData.message}
+      `;
+
+    const url = `https://api.telegram.org/bot${botToken}/sendMessage`;
+
+    try {
+      const response = await fetch(url, {
+        method: "POST",
+        headers: {"Content-Type": "application/json"},
+        body: JSON.stringify({
+          chat_id: chatId,
+          text: message,
+          parse_mode: "Markdown",
+        }),
+      });
+
+      if (response.ok) {
+        alert("Form submitted successfully and sent to Telegram!");
+        setFormData({name: "", email: "", tel: "", message: ""});
+        toggleModal();
+      } else {
+        alert("Failed to send message to Telegram.");
+      }
+    } catch (error) {
+      console.error("Error sending message:", error);
+      alert("An error occurred.");
+    }
+  };
   return (
     <div
       id="bron2"
@@ -70,30 +123,43 @@ const ContactBanner = () => {
                   Keling, keyingi sayohatingizni rejalashtiramiz
                 </h1>
 
-                <form>
+                <form onSubmit={handleSubmit}>
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
                     <input
                       type="text"
+                      name="name"
+                      value={formData.name}
+                      onChange={handleChange}
                       placeholder="Ismingiz"
                       className="border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-yellow-500"
                     />
                     <input
-                      type="email"
-                      placeholder="Emailingiz"
+                     type="email"
+                     name="email"
+                     value={formData.email}
+                     onChange={handleChange}
+                     placeholder="Emailingiz"
                       className="border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-yellow-500"
                     />
                   </div>
                   <input
                     type="tel"
+                    name="tel"
+                    value={formData.tel}
+                    onChange={handleChange}
                     placeholder="Telefon raqam"
                     className="w-full border border-gray-300 rounded-lg px-4 py-2 mb-4 focus:outline-none focus:ring-2 focus:ring-yellow-500"
                   />
                   <textarea
+                    name="message"
+                    value={formData.message}
+                    onChange={handleChange}
                     placeholder="Qo'shimcha ma'lumotlar"
                     className="w-full border border-gray-300 rounded-lg px-4 py-2 mb-6 focus:outline-none focus:ring-2 focus:ring-yellow-500"
                     rows="4"></textarea>
                   <button
                     type="submit"
+                   
                     className="bg-yellow-500 text-white px-6 py-3 rounded-lg font-semibold hover:bg-yellow-600 transition">
                     Joy band qilish
                   </button>

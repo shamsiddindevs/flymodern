@@ -1,0 +1,188 @@
+{
+    "nav": {
+      "home": "Bosh sahifa",
+      "about": "Biz haqimizda",
+      "tours": "Turlar",
+      "contact": "Biz bilan aloqa"
+    },
+    "banner": {
+        "title": "Sayohat qilishni xohlaysizmi?",
+        "subtitle": "Sayohat orzularingizni haqiqiy voqelikka aylantiring, kashf qiling va unutilmas xotiralar yarating.",
+        "button_discover_more": "Ko'proq bilish",
+        "placeholder_name": "Ismingiz...",
+        "placeholder_location": "Manzilingiz...",
+        "placeholder_date": "Sana tanlang...",
+        "button_reservation": "Joy band qilish"
+      },
+      "popular_destinations": {
+    "title": "Bizning mashhur manzillarimiz",
+    "subtitle": "Ushbu yo'nalishlar bilan haqiqatan ham o'ziga xos qiladigan go'zallik, madaniyat va tajribalarni kashf eting.",
+    "locations": {
+      "istanbul": "Istanbul",
+      "sharm_el_sheikh": "Sharm El-Sheykh",
+      "thailand": "Tailand",
+      "argentina": "Argentina",
+      "dubai": "Dubay",
+      "saudi": "Saudiya"
+    },
+    "booked": " band qilingan"
+  },
+  "banner_destinations": {
+    "title": "Manzillarni osongina o'rganing",
+    "destinations": {
+      "cheap_tickets": {
+        "title": "Biz bilan arzon temir yo'l chiptalari",
+        "subtitle": "Butun dunyo",
+        "description": "Temir yo'l sayohatlaringizni keng va sifatli qiling. Biz sizga arzon chiptalarni taklif qilamiz, bu esa sayohatingizni osonlashtiradi."
+      },
+      "air_travel_deals": {
+        "title": "Havo sayohatlari uchun qiziqarli takliflar",
+        "subtitle": "Global manzillar",
+        "description": "Havo sayohatlaringizni oson va qiziqarli qiling. Bizning takliflarimiz sizga cheksiz imkoniyatlarni taqdim etadi."
+      },
+      "dubai": {
+        "title": "Dubay",
+        "subtitle": "Birlashgan Arab Amirliklari",
+        "description": "Dubay o'zining hashamatli hayoti va qiziqarli sayohat joylari bilan mashhur. Bu yerda siz unutilmas dam olishingiz mumkin."
+      },
+      "antalya": {
+        "title": "Antaliya",
+        "subtitle": "Turkiya",
+        "description": "Antaliya o'zining go'zal plyajlari va dam olish joylari bilan sayyohlar uchun eng yaxshi tanlovdir."
+      },
+      "sharm_el_sheikh": {
+        "title": "Sharm El-Sheykh",
+        "subtitle": "Misr",
+        "description": "Sharm El-Sheykhning go'zal plyajlari va suv sportlari sizni jalb qiladi. Bu yerda siz ajoyib dam olishingiz mumkin."
+      },
+      "istanbul": {
+        "title": "Istanbul",
+        "subtitle": "Turkiya",
+        "description": "Istanbulning tarixiy joylari va madaniy boyliklari sizni o'ziga jalb qiladi. Bu sayohat unutilmas bo'ladi."
+      }
+    }
+  },
+  "explore_destinations": {
+    "title": "Bizning yo'nalishlarimizni o'rganing",
+    "subtitle": "Dubay, Turkiya va Sharm El-Sheykhni kashf eting",
+    "cards": {
+      "dubai": {
+        "title": "Dubayda hashamatni his eting",
+        "description": "Dubayning osmono'par binolari, hashamatli xaridlari va cho'l sarguzashtlarining boyligini zavqlaning. Unga sayohat qilish unutilmas bo'ladi.",
+        "button_learn": "Ko'proq bilish",
+        "button_book": "Joy band qilish"
+      },
+      "turkey": {
+        "title": "Turkiya madaniyatini kashf eting",
+        "description": "Turkiyaning qadimiy xarobalaridan tortib jonli bozorlariga qadar sizni hayratlantiradi. Unutilmas sayohat tajribasi uchun ajoyib joy.",
+        "button_learn": "Ko'proq bilish",
+        "button_book": "Joy band qilish"
+      },
+      "sharm_el_sheikh": {
+        "title": "Sharm El-Sheykhda dam oling",
+        "description": "Sharm El-Sheykhning ajoyib plyajlari va marjon riflariga boring. Unutilmas dam olish uchun mukammal manzil.",
+        "button_learn": "Ko'proq bilish",
+        "button_book": "Joy band qilish"
+      }
+    }
+  },
+  "our_services": {
+    "title": "Bizning xizmatlarimiz",
+    "subtitle": "Ishonch bilan sayohat qiling",
+    "services": {
+      "curated_experiences": {
+        "title": "Sayohat tajribalari",
+        "description": "Sizning xohishingizga moslashtirilgan yuqori sifatli tajribalarni tanlang."
+      },
+      "personalized_itineraries": {
+        "title": "Moslashtirilgan marshrutlar",
+        "description": "Sizning ehtiyojlaringiz va xohishlaringizga moslashtirilgan rejalarga ishonch hosil qiling."
+      },
+      "expert_packages": {
+        "title": "Maxsus sayohat paketlari",
+        "description": "Mukammal sarguzashtlar uchun bizning tayyorlangan paketlarimizni tanlang."
+      }
+    },
+    "plan_trip": {
+      "title": "Orzuingizdagi sayohatni rejalashtiring",
+      "button_start": "Rejalashni boshlash"
+    },
+    "guidance": {
+      "expert": "Tajribali gid xizmatlari",
+      "customizable": "Moslashtirilgan xizmatlar",
+      "support": "24/7 Qo'llab-quvvatlash"
+    }
+  },
+  "exclusive_offers": {
+    "title": "Eksklyuziv takliflar",
+    "subtitle": "Orzuingizdagi ta'tilni rejalashtiring",
+    "plans": {
+      "essential_explorer": {
+        "title": "Asosiy sayohatchi",
+        "contact": "Biz bilan bog'laning",
+        "customized": "Moslashtirilgan",
+        "features": [
+          "Moslashtirilgan sayohat rejalashtirish",
+          "Shaxsiy yo'nalish bo'yicha tavsiyalar",
+          "Sayohat bo'yicha mutaxassis bilan maslahat",
+          "24/7 xizmat ko'rsatish",
+          "Moslashuvchan narxlar"
+        ],
+        "button_quote": "Taklifni oling"
+      },
+      "premium_voyager": {
+        "title": "Premium sayohatchi",
+        "contact": "Biz bilan bog'laning",
+        "customized": "Moslashtirilgan",
+        "features": [
+          "Hashamatli joylashuvlar",
+          "Eksklyuziv tajribalar",
+          "Xususiy qo'llanma bilan sayohatlar",
+          "Moslashtirilgan sayohat paketlari",
+          "Kelishilgan narxlar"
+        ],
+        "button_quote": "Taklifni oling"
+      },
+      "ultimate_wanderer": {
+        "title": "Eng yaxshi sayohatchi",
+        "contact": "Biz bilan bog'laning",
+        "customized": "Moslashtirilgan",
+        "features": [
+          "VIP sayohat xizmatlari",
+          "Eksklyuziv hashamatli tajribalar",
+          "Maxsus kirish va tadbirlar",
+          "Kelishilgan narxlar va bonuslar",
+          "Umrbod sayohat a'zoligi"
+        ],
+        "button_quote": "Taklifni oling"
+      }
+    }
+  },"reservation": {
+    "title": "Biz bilan joyingizni band qiling",
+    "subtitle": "Biz bilan sayohatingizni rejalashtiring",
+    "director": "Direktor: Nilufar Sadikova",
+    "phone": "+998951270090",
+    "button_reservation": "Joy band qilish"
+  },
+  "footer": {
+    "logo_text": "Fly Modern",
+    "slogan": "AVIABILET VISA TURIZM",
+    "description": "Dunyoni Fly Modern bilan kashf eting. Unutilmas sayohatlarni yaratishda ishonchli hamkoringiz bo'ling.",
+    "useful_links": {
+      "blog": "Blog",
+      "contact_us": "Biz bilan aloqa",
+      "about_us": "Biz haqimizda",
+      "privacy_policy": "Maxfiylik siyosati"
+    },
+    "contact_info": {
+      "title": "Aloqa ma'lumotlari",
+      "description": "Keyingi sayohatingizni boshlashga tayyormisiz? Sayohat bo'yicha maxsus yordam uchun biz bilan bog'laning.",
+      "phone": "Telefon:",
+      "email": "Email:",
+      "address": "Manzil:",
+      "address_details": "Shayxontohur tumani, Jangoh ko'chasi, 1-qavat, 37-xonadon, Toshkent shahri"
+    }
+  }
+  }
+  
+  

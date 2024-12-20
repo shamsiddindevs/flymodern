@@ -5,6 +5,7 @@ import Contact from "./pages/Contact";
 import Tur from "./pages/Tur";
 import MainLayout from "./layouts/MainLayout";
 
+
 const router = createBrowserRouter([
   {
     path: "/",

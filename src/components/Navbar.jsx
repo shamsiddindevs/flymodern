@@ -4,8 +4,23 @@ import logo from "../assets/img/logo.png";
 import uzb from "../assets/img/uzb.png";
 import eng from "../assets/img/eng.png";
 import russian from "../assets/img/russian.png";
+import { useTranslation } from 'react-i18next';
+
 
 const Navbar = () => {
+  const { i18n, t } = useTranslation();
+  const lang = localStorage.getItem('language') || 'uz'; // Get language from local storage
+  
+
+
+  const changeLanguage = (lng) => {
+    i18n.changeLanguage(lng);
+    localStorage.setItem('language', lng); // Save language to local storage
+    setIsOpen(false); // Close dropdown after selection
+    document.getElementById("language").classList.toggle("hidden"); // Close dropdown after selection
+    document.getElementById("language2").classList.toggle("hidden"); // Close dropdown after selection
+  };
+  
   const [isOpen, setIsOpen] = useState(false);
   const [isRotate, setIsRotate] = useState(false);
 
@@ -41,28 +56,28 @@ const Navbar = () => {
               <a
                 href="#"
                 className="hover:text-yellow-500 text-black">
-                Asosiy sahifa
+               {t('nav.home')}
               </a>
             </li>
             <li>
               <a
                 href="#about"
                 className="hover:text-yellow-500 text-black">
-                Biz haqimizda
+                {t('nav.about')}
               </a>
             </li>
             <li>
               <a
                 href="#tours"
                 className="hover:text-yellow-500 text-black">
-                Turlar
+                {t('nav.tours')}
               </a>
             </li>
             <li>
               <a
                 href="#contact"
                 className="hover:text-yellow-500 text-black">
-                Kontaktlar
+                {t('nav.contact')}
               </a>
             </li>
           </ul>
@@ -76,7 +91,7 @@ const Navbar = () => {
               }
               }>
               <img
-                src={uzb}
+                src={lang=="uz" ? uzb : lang=="ru" ? russian : eng}
                 alt="Language"
                 className="h-5"
               />
@@ -109,21 +124,21 @@ const Navbar = () => {
             <ul
               id="language"
               className="absolute right-0 mt-2 w-14 bg-white shadow-lg rounded-md hidden ">
-              <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer">
+              <li  onClick={() => changeLanguage('uz')} className="px-4 py-2 hover:bg-gray-100 cursor-pointer">
                 <img
                   src={uzb}
                   alt="Language"
                   className="h-5"
                 />
               </li>
-              <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer">
+              <li  onClick={() => changeLanguage('ru')}  className="px-4 py-2 hover:bg-gray-100 cursor-pointer">
                 <img
                   src={russian}
                   alt="Language"
                   className="h-5"
                 />
               </li>
-              <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer">
+              <li  onClick={() => changeLanguage('en')} className="px-4 py-2 hover:bg-gray-100 cursor-pointer">
                 <img
                   src={eng}
                   alt="Language"
@@ -188,7 +203,7 @@ const Navbar = () => {
                 }}
                 href="#"
                 className="hover:text-yellow-500 font-bold leading-[100px] text-black">
-                Asosiy sahifa
+                {t('nav.home')}
               </a>
             </li>
             <li className="border-t border-t-gray-400">
@@ -201,7 +216,7 @@ const Navbar = () => {
                 }}
                 href="#about"
                 className="hover:text-yellow-500 text-black leading-[100px] font-bold">
-                Biz haqimizda
+               {t('nav.about')}
               </a>
             </li>
             <li className="border-t border-t-gray-400">
@@ -214,7 +229,7 @@ const Navbar = () => {
                 }}
                 href="#tours"
                 className="hover:text-yellow-500 text-black leading-[100px] font-bold">
-                Turlar
+               {t('nav.tours')}
               </a>
             </li>
             <li className="border-t border-t-gray-400">
@@ -227,7 +242,7 @@ const Navbar = () => {
                 }}
                 href="#contact"
                 className="hover:text-yellow-500 text-black leading-[100px] font-bold">
-                Kontaktlar
+                {t('nav.contact')}
               </a>
             </li>
             <li className="border-t border-t-gray-400">
@@ -241,7 +256,7 @@ const Navbar = () => {
                     toggleLang();
                   }}>
                   <img
-                    src={uzb}
+                    src={lang=="uz" ? uzb : lang=="ru" ? russian : eng} 
                     alt="Language"
                     className="h-5"
                   />
@@ -274,21 +289,24 @@ const Navbar = () => {
                 <ul
                   id="language2"
                   className="absolute right-0 mt-2 w-14 bg-white shadow-lg rounded-md hidden ">
-                  <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer">
+                  <li onClick={()=>changeLanguage("uz")}  className="px-4 py-2 hover:bg-gray-100 cursor-pointer">
                     <img
+
                       src={uzb}
                       alt="Language"
                       className="h-5"
                     />
                   </li>
-                  <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer">
+                  <li  onClick={()=>changeLanguage("ru")}
+                   className="px-4 py-2 hover:bg-gray-100 cursor-pointer">
                     <img
                       src={russian}
                       alt="Language"
                       className="h-5"
                     />
                   </li>
-                  <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer">
+                  <li onClick={()=>changeLanguage("en")}
+                   className="px-4 py-2 hover:bg-gray-100 cursor-pointer">
                     <img
                       src={eng}
                       alt="Language"

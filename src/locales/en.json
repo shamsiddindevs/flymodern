@@ -1,0 +1,187 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "tours": "Tours",
+    "contact": "Contact Us"
+  },
+  "banner": {
+    "title": "Are you looking to travel?",
+    "subtitle": "Make your travel dreams a reality, plan, explore, and create unforgettable memories.",
+    "button_discover_more": "Discover More",
+    "placeholder_name": "Your name...",
+    "placeholder_location": "Type location...",
+    "placeholder_date": "Pick a date...",
+    "button_reservation": "Make a reservation"
+  },
+  "popular_destinations": {
+    "title": "Our Popular Destinations",
+    "subtitle": "Discover the beauty, culture, and experiences that make these destinations truly special.",
+    "locations": {
+      "istanbul": "Istanbul",
+      "sharm_el_sheikh": "Sharm El-Sheikh",
+      "thailand": "Thailand",
+      "argentina": "Argentina",
+      "dubai": "Dubai",
+      "saudi": "Saudi"
+    },
+    "booked": "{{count}} booked"
+  },
+  "banner_destinations": {
+    "title": "Explore destinations easily",
+    "destinations": {
+      "cheap_tickets": {
+        "title": "Cheap Railway Tickets With Us",
+        "subtitle": "Whole world",
+        "description": "Make your railway journeys comfortable and affordable. We offer cheap tickets to make your trips easy."
+      },
+      "air_travel_deals": {
+        "title": "Discover Exciting Air Travel Deals",
+        "subtitle": "Global Destinations",
+        "description": "Make your air travel simple and exciting. Our deals offer you limitless opportunities for a great experience."
+      },
+      "dubai": {
+        "title": "Dubai",
+        "subtitle": "United Arab Emirates",
+        "description": "Dubai is known for its luxurious lifestyle and interesting tourist attractions. Enjoy a perfect vacation here."
+      },
+      "antalya": {
+        "title": "Antalya",
+        "subtitle": "Turkey",
+        "description": "Antalya is famous for its beautiful beaches and resorts. It is a perfect choice for travelers."
+      },
+      "sharm_el_sheikh": {
+        "title": "Sharm El-Sheikh",
+        "subtitle": "Egypt",
+        "description": "The beaches and water sports of Sharm El-Sheikh will captivate you. Have an unforgettable vacation here."
+      },
+      "istanbul": {
+        "title": "Istanbul",
+        "subtitle": "Turkey",
+        "description": "The historical sites and cultural richness of Istanbul will fascinate you. This trip will be unforgettable."
+      }
+    }
+  },
+  "explore_destinations": {
+    "title": "Explore Our Destinations",
+    "subtitle": "Discover Dubai, Turkey, and Sharm El Sheikh",
+    "cards": {
+      "dubai": {
+        "title": "Experience Luxury in Dubai",
+        "description": "Enjoy Dubai's skyscrapers, luxurious shopping, and desert adventures. A trip to remember.",
+        "button_learn": "Learn More",
+        "button_book": "Book Now"
+      },
+      "turkey": {
+        "title": "Discover the Rich Culture of Turkey",
+        "description": "From ancient ruins to bustling markets, Turkey offers unforgettable experiences.",
+        "button_learn": "Learn More",
+        "button_book": "Book Now"
+      },
+      "sharm_el_sheikh": {
+        "title": "Relax in Sharm El Sheikh's Paradise",
+        "description": "Visit the stunning beaches and coral reefs of Sharm El Sheikh. Perfect for a getaway.",
+        "button_learn": "Learn More",
+        "button_book": "Book Now"
+      }
+    }
+  },
+  "our_services": {
+    "title": "Our Services",
+    "subtitle": "Explore with Confidence",
+    "services": {
+      "curated_experiences": {
+        "title": "Curated Travel Experiences",
+        "description": "Select top-quality experiences tailored to your preferences."
+      },
+      "personalized_itineraries": {
+        "title": "Personalized Itineraries",
+        "description": "Ensure plans meet your needs and desires."
+      },
+      "expert_packages": {
+        "title": "Expertly Crafted Travel Packages",
+        "description": "Choose our tailored packages for perfect adventures."
+      }
+    },
+    "plan_trip": {
+      "title": "Plan Your Dream Getaway",
+      "button_start": "Start Planning"
+    },
+    "guidance": {
+      "expert": "Expert Guidance",
+      "customizable": "Customizable Options",
+      "support": "24/7 Support"
+    }
+  },
+  "exclusive_offers": {
+    "title": "Exclusive Offers",
+    "subtitle": "Unlock Your Dream Vacation",
+    "plans": {
+      "essential_explorer": {
+        "title": "Essential Explorer",
+        "contact": "Contact us",
+        "customized": "Customized",
+        "features": [
+          "Tailored itinerary planning",
+          "Personalized destination recommendations",
+          "Expert travel consultation",
+          "24/7 dedicated support",
+          "Flexible pricing"
+        ],
+        "button_quote": "Get a Quote"
+      },
+      "premium_voyager": {
+        "title": "Premium Voyager",
+        "contact": "Contact us",
+        "customized": "Customized",
+        "features": [
+          "Luxury accommodations",
+          "Exclusive experiences",
+          "Private guided tours",
+          "Customized travel packages",
+          "Negotiable pricing"
+        ],
+        "button_quote": "Get a Quote"
+      },
+      "ultimate_wanderer": {
+        "title": "Ultimate Wanderer",
+        "contact": "Contact us",
+        "customized": "Customized",
+        "features": [
+          "VIP travel concierge",
+          "Exclusive luxury experiences",
+          "Special access and events",
+          "Flexible and negotiable pricing",
+          "Lifetime travel membership"
+        ],
+        "button_quote": "Get a Quote"
+      }
+    }
+  },
+  "reservation": {
+    "title": "Make a reservation with us",
+    "subtitle": "Plan Your Journey with Us",
+    "director": "Director: Nilufar Sadikova",
+    "phone": "+998951270090",
+    "button_reservation": "Make a reservation"
+  },
+  "footer": {
+    "logo_text": "Fly Modern",
+    "slogan": "AVIATICKETS VISA TOURISM",
+    "description": "Explore the world with Fly Modern, your trusted partner in creating unforgettable journeys.",
+    "useful_links": {
+      "blog": "Blog",
+      "contact_us": "Contact Us",
+      "about_us": "About Us",
+      "privacy_policy": "Privacy Policy"
+    },
+    "contact_info": {
+      "title": "Contact Information",
+      "description": "Ready to embark on your next adventure? Contact us for personalized travel assistance and inquiries.",
+      "phone": "Phone:",
+      "email": "Email:",
+      "address": "Address:",
+      "address_details": "Shaykhontohur district, Jangoh avenue, 1st floor, house 37, Tashkent city"
+    }
+  }
+}
