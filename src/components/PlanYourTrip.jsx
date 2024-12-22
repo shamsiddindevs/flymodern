@@ -1,27 +1,32 @@
 import React, {useState} from "react";
+import {useTranslation} from "react-i18next";
 
-const services = [
-  {
-    title: "Tajribalı gidlar xizmati",
-    description:
-      "Siz uchun mukammal marshrutni yaratishga ishtiyoqi sayohat bo‘yicha mutaxassislarimizdan ko‘rsatmalar oling. Manzil takliflaridan tortib sayohat maslahatlarigacha sayohatingizni ajoyib qilish uchun shu yerdamiz.",
-    active: true,
-  },
-  {
-    title: "Moslashuvchan xizmatlar",
-    description:
-      "Sayohatlaringizni rejalashtirish uchun moslashuvchan xizmatlarimizdan foydalaning, bu sayohatingizni stressdan holi qiladi.",
-    active: false,
-  },
-  {
-    title: "24/7 Qo'llab quvvatlash",
-    description:
-      "Har qanday muammolar uchun bizning 24/7 qo‘llab quvvatlash xizmatimiz yordam berishga tayyor.",
-    active: false,
-  },
-];
+
 
 const PlanYourTrip = () => {
+ const {t} = useTranslation();
+
+
+  const services = [
+    {
+      title: t("exclusive_offers.guides_service.title"),
+      description:
+        t("exclusive_offers.guides_service.description"),
+      active: true,
+    },
+    {
+      title: t("exclusive_offers.flexible_services.title"),
+      description:
+        t("exclusive_offers.flexible_services.description"),
+      active: false,
+    },
+    {
+      title: t("exclusive_offers.support.title"),
+      description:
+        t("exclusive_offers.support.description"),
+      active: false,
+    },
+  ];
   const [activeIndex, setActiveIndex] = useState(0);
 
   return (
@@ -30,15 +35,12 @@ const PlanYourTrip = () => {
         {/* Left Section */}
         <div className="flex flex-col justify-start items-start ">
           <h2 className="text-xl md:text-2xl  text-black mb-4">
-            Orzuingizdagi sayohatni rejalashtiring
+          {t("our_services.plan_trip.title")}
           </h2>
           <p className="text-gray-600 mb-6">
-            O'zingizning orzuingizdagi sayohatga chiqayotganganingizda, har bir
-            tafsilotga e'tibor qaratamiz. Bu madaniy qochish, sarguzashtli
-            ekspeditsiya yoki sohilga dam olish bo'ladimi, biz muammosiz va
-            unutilmas sayohat tajribasini ta'minlaymiz.
+           {t("exclusive_offers.guides_service.description")}
           </p>
-          <a href="#bron" className="btn-yel">Bog'lanish</a>
+          <a href="#bron" className="btn-yel">{t("our_services.plan_trip.button_start")}</a>
         </div>
 
         {/* Right Section */}

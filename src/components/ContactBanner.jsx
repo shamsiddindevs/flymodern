@@ -1,6 +1,9 @@
 import React, {useState} from "react";
+import {useTranslation} from "react-i18next";
 
 const ContactBanner = () => {
+
+  const {t} = useTranslation(); 
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleModal = () => {
@@ -66,16 +69,17 @@ const ContactBanner = () => {
       <div className="text-center">
         {/* Subtitle */}
         <h2 className="text-yellow-500 text-xl  mb-2">
-          Biz bilan o'z joyingizni band qiling!
+          {t("reservation.title")}
         </h2>
 
         {/* Title */}
         <h1 className="text-xl md:text-2xl font-semibold text-gray-800 mb-4">
-          Ta'tilingizni biz bilan o'tkazing
+          {t("reservation.subtitle")}
         </h1>
 
         {/* Director Information */}
-        <p className="text-gray-600 text-lg mb-2">Direktor: Nilufar Sadikova</p>
+        <p className="text-gray-600 text-lg mb-2">  {t("reservation.director")}</p>
+           
 
         {/* Contact Number */}
         <a
@@ -88,7 +92,7 @@ const ContactBanner = () => {
         <button
           className="btn-yel"
           onClick={toggleModal}>
-          Joy Band Qilish
+          {t("reservation.button_reservation")}
         </button>
       </div>
       {isOpen && (
@@ -126,6 +130,7 @@ const ContactBanner = () => {
                 <form onSubmit={handleSubmit}>
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
                     <input
+                    required
                       type="text"
                       name="name"
                       value={formData.name}
@@ -134,6 +139,8 @@ const ContactBanner = () => {
                       className="border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-yellow-500"
                     />
                     <input
+                    required
+                    
                      type="email"
                      name="email"
                      value={formData.email}
@@ -143,6 +150,7 @@ const ContactBanner = () => {
                     />
                   </div>
                   <input
+                  required
                     type="tel"
                     name="tel"
                     value={formData.tel}
@@ -151,6 +159,7 @@ const ContactBanner = () => {
                     className="w-full border border-gray-300 rounded-lg px-4 py-2 mb-4 focus:outline-none focus:ring-2 focus:ring-yellow-500"
                   />
                   <textarea
+                  required
                     name="message"
                     value={formData.message}
                     onChange={handleChange}

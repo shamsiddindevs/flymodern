@@ -16,7 +16,7 @@ const Navbar = () => {
   const changeLanguage = (lng) => {
     i18n.changeLanguage(lng);
     localStorage.setItem('language', lng); // Save language to local storage
-    setIsOpen(false); // Close dropdown after selection
+     // Close dropdown after selection
     document.getElementById("language").classList.toggle("hidden"); // Close dropdown after selection
     document.getElementById("language2").classList.toggle("hidden"); // Close dropdown after selection
   };
@@ -33,7 +33,7 @@ const Navbar = () => {
   };
   return (
     <nav className="bg-white shadow-lg relative z-50">
-      <div className="container mx-auto px-4 flex justify-between items-center py-3">
+      <div className="container mx-auto px-6 flex justify-between items-center py-3">
         {/* Logo */}
         <a
           href="#"
@@ -49,9 +49,9 @@ const Navbar = () => {
           </div>
         </a>
 
-        <div className="flex items-center gap-12 ">
+        <div className="flex items-center gap-16 ">
           {/* Navigation Links */}
-          <ul className="hidden lg:flex space-x-12 font-bold text-lg">
+          <ul className="hidden lg:flex space-x-16 font-semibold text-lg">
             <li>
               <a
                 href="#"
@@ -93,11 +93,11 @@ const Navbar = () => {
               <img
                 src={lang=="uz" ? uzb : lang=="ru" ? russian : eng}
                 alt="Language"
-                className="h-8"
+                className="h-6"
               />
               {isRotate ? (
                     <svg
-                      className="h-5 w-5"
+                      className="h-4 w-4"
                       fill="currentColor"
                       viewBox="0 0 20 20"
                       xmlns="http://www.w3.org/2000/svg">
@@ -109,7 +109,7 @@ const Navbar = () => {
                     </svg>
                   ) : (
                     <svg
-                      className="h-5 w-5 rotate-180"
+                      className="h-4 w-4 rotate-180"
                       fill="currentColor"
                       viewBox="0 0 20 20"
                       xmlns="http://www.w3.org/2000/svg">
@@ -128,21 +128,21 @@ const Navbar = () => {
                 <img
                   src={uzb}
                   alt="Language"
-                  className="h-5"
+                  className="h-6"
                 />
               </li>
               <li  onClick={() => changeLanguage('ru')}  className="px-4 py-2 hover:bg-gray-100 cursor-pointer">
                 <img
                   src={russian}
                   alt="Language"
-                  className="h-5"
+                  className="h-6"
                 />
               </li>
               <li  onClick={() => changeLanguage('en')} className="px-4 py-2 hover:bg-gray-100 cursor-pointer">
                 <img
                   src={eng}
                   alt="Language"
-                  className="h-5"
+                  className="h-6"
                 />
               </li>
             </ul>
@@ -262,7 +262,7 @@ const Navbar = () => {
                   />
                   {isRotate ? (
                     <svg
-                      className="h-4 w-4"
+                      className="h-6 w-6"
                       fill="currentColor"
                       viewBox="0 0 20 20"
                       xmlns="http://www.w3.org/2000/svg">
@@ -274,7 +274,7 @@ const Navbar = () => {
                     </svg>
                   ) : (
                     <svg
-                      className="h-4 w-4 rotate-180"
+                      className="h-6 w-6 rotate-180"
                       fill="currentColor"
                       viewBox="0 0 20 20"
                       xmlns="http://www.w3.org/2000/svg">

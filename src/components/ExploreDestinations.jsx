@@ -1,40 +1,45 @@
 import React from "react";
 import dubai2 from "../assets/img/dubai2.jpg";
+import {useTranslation} from "react-i18next";
 
-const destinations = [
-  {
-    title: "Dubayda hashamatni his eting",
-    subtitle: "Shahar va sahro uyg‘unligi",
-    description:
-      "Dubayning osmono‘par binolari, hashamatli xaridlari va cho‘l sarguzashtlarini boyligidan zavqlaning. Hashamatni va innovatsion tajribalarni taklif qiluvchi ajoyib shaharda dam oling.",
-    image: dubai2,
-  },
-  {
-    title: "Turkiya madaniyatini kashf eting",
-    subtitle: "Tarixiy mo‘jizalar va hayratlanarli manzaralar",
-    description:
-      "Turkiyaning qadimiy xarobalardan tortib jonli bozorlarigacha bo‘lgan jarayonida tarixga sho‘ng‘ing. Go‘zal manzaralar va mehmondo‘stlikni rohatlaning.",
-    image: dubai2,
-  },
-  {
-    title: "Sharm El-Sheykhda dam oling",
-    subtitle: "Quyosh, dengiz va osoyishtalik",
-    description:
-      "Sharm al-Shayxning ajoyib plyajlari va marjon riflariga boring. Tropik jannatda eng yaxshi dam olish tajribasidan bahramand bo‘ling.",
-    image: dubai2,
-  },
-];
+
 
 const ExploreDestinations = () => {
+  const {t} = useTranslation();
+
+
+  const destinations = [
+    {
+      title:t("explore_destinations.cards.dubai.title"),
+      subtitle: t("explore_destinations.cards.dubai.subtitle"),
+      description:
+        t("explore_destinations.cards.dubai.description"),
+      image: dubai2,
+    },
+    {
+      title: t("explore_destinations.cards.turkey.title"),
+      subtitle: t("explore_destinations.cards.turkey.subtitle"), 
+      description:
+        t("explore_destinations.cards.turkey.description"),
+      image: dubai2,
+    },
+    {
+      title: t("explore_destinations.cards.sharm_el_sheikh.title"),
+      subtitle: t("explore_destinations.cards.sharm_el_sheikh.subtitle"),
+      description:
+        t("explore_destinations.cards.sharm_el_sheikh.description"),
+      image: dubai2,
+    },
+  ];
   return (
     <div
       id="about"
       className="bg-gray-100 py-20">
       {/* Title Section */}
       <div className="text-center  text-yellow-500 mb-10 ">
-        <h2 className="mb-3 text-lg">Bizning manzillarimizni kashf eting</h2>
+        <h2 className="mb-3 text-lg">{t("explore_destinations.title")}</h2>
         <p className="text-gray-900 text-lg md:text-2xl font-semibold">
-          Dubay, Turkiya, Sharm El Sheyhni biz bilan kashf eting
+          {t("explore_destinations.subtitle")}
         </p>
       </div>
 
@@ -60,14 +65,14 @@ const ExploreDestinations = () => {
               </div>
 
               {/* Buttons */}
-              <div className="flex flex-wrap gap-2 justify-between">
-                <button className="bg-yellow-500 text-white px-4 py-2 rounded-lg font-semibold hover:bg-yellow-600 transition">
-                  Ko'proq bilish
+              <div className="flex flex-wrap gap-4 justify-between">
+                <button className="btn-yel">
+                  {t("explore_destinations.cards.dubai.button_learn")}
                 </button>
                 <a
                   href="#bron2"
-                  className="bg-gray-200 text-black px-4 py-2 rounded-lg font-semibold hover:bg-gray-300 transition">
-                  Band qilish
+                  className="btn-yel text-gray-900 bg-slate-200 border-slate-200 hover:bg-slate-300 hover:border-slate-300 hover:text-gray-900">
+                  {t("explore_destinations.cards.dubai.button_book")}
                 </a>
               </div>
             </div>

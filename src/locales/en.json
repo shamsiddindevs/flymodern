@@ -25,7 +25,7 @@
       "dubai": "Dubai",
       "saudi": "Saudi"
     },
-    "booked": "{{count}} booked"
+    "booked": " booked"
   },
   "banner_destinations": {
     "title": "Explore destinations easily",
@@ -67,24 +67,28 @@
     "subtitle": "Discover Dubai, Turkey, and Sharm El Sheikh",
     "cards": {
       "dubai": {
-        "title": "Experience Luxury in Dubai",
-        "description": "Enjoy Dubai's skyscrapers, luxurious shopping, and desert adventures. A trip to remember.",
+        "title": "Feel the Luxury in Dubai",
+        "subtitle": "The City of Luxury and Innovation",
+        "description": "Enjoy Dubai's skyscrapers, luxurious shopping, and the richness of desert adventures. A trip here will be unforgettable.",
         "button_learn": "Learn More",
         "button_book": "Book Now"
       },
       "turkey": {
-        "title": "Discover the Rich Culture of Turkey",
-        "description": "From ancient ruins to bustling markets, Turkey offers unforgettable experiences.",
+        "title": "Discover the Culture of Turkey",
+        "subtitle": "A Harmony of Culture and History",
+        "description": "From ancient ruins to bustling bazaars, Turkey will amaze you. A perfect place for an unforgettable travel experience.",
         "button_learn": "Learn More",
         "button_book": "Book Now"
       },
       "sharm_el_sheikh": {
-        "title": "Relax in Sharm El Sheikh's Paradise",
-        "description": "Visit the stunning beaches and coral reefs of Sharm El Sheikh. Perfect for a getaway.",
+        "title": "Relax in Sharm El Sheikh",
+        "subtitle": "The Paradise of Sun and Beaches",
+        "description": "Visit the stunning beaches and coral reefs of Sharm El Sheikh. A perfect destination for a memorable vacation.",
         "button_learn": "Learn More",
         "button_book": "Book Now"
       }
     }
+
   },
   "our_services": {
     "title": "Our Services",
@@ -116,6 +120,18 @@
   "exclusive_offers": {
     "title": "Exclusive Offers",
     "subtitle": "Unlock Your Dream Vacation",
+    "guides_service": {
+      "title": "Experienced Guide Services",
+      "description": "Get expert advice on travel to create a perfect itinerary. From destination recommendations to travel tips, we are here to make your journey exceptional."
+    },
+    "flexible_services":{
+      "title": "Flexible Services",
+      "description": "Our services are tailored to your needs. We offer customizable packages and expert guidance to make your travel experience exceptional."
+    },
+    "support":{
+      "title": "24/7 Support",
+      "description": "We provide around-the-clock support to ensure your travel experience is seamless. Contact us anytime for assistance."
+    },
     "plans": {
       "essential_explorer": {
         "title": "Essential Explorer",

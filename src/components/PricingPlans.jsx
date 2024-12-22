@@ -1,52 +1,38 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 
-const plans = [
-  {
-    title: "Asosiy Sayohatchi",
-    description: "Biz bilan bog‘laning",
-    subDescription: "/individual",
-    features: [
-      "Moslashtirilgan Sayohat Rejasi",
-      "Shakllantirilgan Manzil Qo‘llanmalar",
-      "Mutaxassis Bilan Sayohat Muhokamasi",
-      "24/7 Xizmat Ko'rsatish",
-      "Moslashuvchan Narxlar",
-    ],
-  },
-  {
-    title: "Premium Sayohatchi",
-    description: "Biz bilan bog‘laning",
-    subDescription: "/individual",
-    features: [
-      "Luks Mehmonxona Joylashuvi",
-      "Maxsus Tajribalar",
-      "Maxsus Yo‘lboshlovchi",
-      "Moslashtirilgan Sayohat Paketlari",
-      "Moslashuvchan Narxlar",
-    ],
-  },
-  {
-    title: "Maksimal Sayohatchi",
-    description: "Biz bilan  bog‘laning",
-    subDescription: "/individual",
-    features: [
-      "VIP Sayohat Dasturi",
-      "Maxsus Lyuks Tajribalar",
-      "Moslashuvchan va Muzokaralar uchun Narxlar",
-      "Ajoyib Taassurotlar",
-    ],
-  },
-];
+
 
 const PricingPlans = () => {
+    const { t } = useTranslation();
+  const plans = [
+    {
+      title: t("exclusive_offers.plans.essential_explorer.title"),
+      description: t("exclusive_offers.plans.essential_explorer.contact"),
+      subDescription: "/individual",
+      features: t("exclusive_offers.plans.essential_explorer.features", { returnObjects: true }),
+    },
+    {
+      title: t("exclusive_offers.plans.premium_voyager.title"),
+      description: t("exclusive_offers.plans.premium_voyager.contact"),
+      subDescription: "/individual",
+      features: t("exclusive_offers.plans.premium_voyager.features", { returnObjects: true }),
+    },
+    {
+      title: t("exclusive_offers.plans.ultimate_wanderer.title"),
+      description: t("exclusive_offers.plans.ultimate_wanderer.contact"),
+      subDescription: "/individual",
+      features: t("exclusive_offers.plans.ultimate_wanderer.features", { returnObjects: true }),
+    },
+  ];
   return (
     <div className=" py-20 ">
       {/* Title Section */}
 
       <div className="text-center  text-yellow-500 mb-10 ">
-        <h2 className="mb-3 text-lg">Maxsus Takliflar</h2>
+        <h2 className="mb-3 text-lg"> {t("exclusive_offers.title")} </h2>
         <p className="text-gray-900 text-lg md:text-2xl font-semibold">
-          O‘zingiz orzu qilgan ta’tilni tanlang
+          {t("exclusive_offers.subtitle")}
         </p>
       </div>
 
@@ -78,7 +64,7 @@ const PricingPlans = () => {
 
               {/* Button */}
               <button className=" btn-yel transition">
-                Bog‘lanish
+                {t("exclusive_offers.plans.ultimate_wanderer.button_quote")}
               </button>
             </div>
           </div>

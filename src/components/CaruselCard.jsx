@@ -1,7 +1,8 @@
 import React from "react";
 import dubai2 from "../assets/img/dubai2.jpg";
-
+import {useTranslation} from "react-i18next";
 const CaruselCard = ({destination}) => {
+  const {t} = useTranslation();
     
     
   return (
@@ -16,7 +17,7 @@ const CaruselCard = ({destination}) => {
       {/* Overlay */}
       <div className="absolute inset-0 bg-black bg-opacity-10 flex flex-col justify-end p-4 text-white">
         <h3 className="text-lg font-semibold">{destination?.title}</h3>
-        <p className="text-sm">{destination?.bookings} band qilingan</p>
+        <p className="text-sm">{destination?.bookings} {t("popular_destinations.booked")} </p>
       </div>
     </div>
   );

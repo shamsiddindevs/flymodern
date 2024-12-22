@@ -1,7 +1,10 @@
 import React, { useState } from "react";
 import dubai2 from "../assets/img/dubai2.jpg";
+import { useTranslation } from "react-i18next";
 
 const Banner = () => {
+
+  const { t } = useTranslation();
   const [formData, setFormData] = useState({
     name: "",
     destination: "",
@@ -64,18 +67,17 @@ const Banner = () => {
         <div className=" py-48 h-full flex flex-col justify-center items-start text-left text-white ">
           {/* Heading */}
           <h1 className="text-3xl md:text-5xl font-semibold mb-4">
-            Sayohat qilishni xohlaysizmi?
+           {t("banner.title")}
           </h1>
           <p className="text-lg md:text-xl mb-6 max-w-3xl">
-            Sayohat orzularingizni haqiqatga aylantiring: rejalashtiring, kashf
-            qiling va unutilmas xotiralar yarating.
+           {t("banner.subtitle")}
           </p>
 
           {/* Call to Action Button */}
           <a
             href="#bron"
             className="btn-yel">
-            Ko'proq bilish
+            {t("banner.button_discover_more")}
           </a>
         </div>
 
@@ -86,26 +88,29 @@ const Banner = () => {
             className="grid grid-cols-1 md:grid-cols-4 gap-4  ">
             {/* Name Input */}
             <input
+            required
               type="text"
               name="name"
               value={formData.name}
               onChange={handleChange}
-              placeholder="Ismingiz..."
+              placeholder={t("banner.placeholder_name")}
               className="border-b border-b-gray-300  px-4 py-2 focus:outline-none focus:border-none"
             />
 
             {/* Destination Input */}
             <input
+            required
               type="text"
               name="destination"
               value={formData.destination}
               onChange={handleChange}
-              placeholder="Manzilingiz..."
+              placeholder={t("banner.placeholder_location")}
               className="border-b border-b-gray-300  px-4 py-2 focus:outline-none focus:border-none"
             />
 
             {/* Date Input */}
             <input
+            required
               type="date"
               name="date"
               value={formData.date}
@@ -119,7 +124,7 @@ const Banner = () => {
             <button
               type="submit"
               className="btn-yel">
-              Joy Band Qilish
+              {t("banner.button_reservation")}
             </button>
           </form>
         </div>

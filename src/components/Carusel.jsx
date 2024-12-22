@@ -13,52 +13,53 @@ import "./Carusel.css";
 import {Pagination} from "swiper/modules";
 
 import CaruselCard from "./CaruselCard";
+import {useTranslation} from "react-i18next";
 
-const destinations = [
-  {
-    title: "Istanbul",
-    image: dubai2,
-    bookings: 76,
-  },
-  {
-    title: "Sharm El-Sheikh",
-    image: dubai2,
-    bookings: 98,
-  },
-  {
-    title: "Tailand",
-    image: dubai2,
-    bookings: 55,
-  },
-  {
-    title: "Argentina",
-    image: dubai2,
-    bookings: 66,
-  },
-  {
-    title: "Dubai",
-    image: dubai2,
-    bookings: 76,
-  },
-  {
-    title: "Saudiya Arabistoni",
-    image: dubai2,
-    bookings: 76,
-  },
-];
+
 
 export default function Carusel() {
+  const {t} = useTranslation();
+  const destinations = [
+    {
+      title: t("popular_destinations.locations.istanbul"),
+      image: dubai2,
+      bookings: 76,
+    },
+    {
+      title: t("popular_destinations.locations.sharm_el_sheikh"),
+      image: dubai2,
+      bookings: 98,
+    },
+    {
+      title: t("popular_destinations.locations.thailand"),
+      image: dubai2,
+      bookings: 55,
+    },
+    {
+      title: t("popular_destinations.locations.argentina"),
+      image: dubai2,
+      bookings: 66,
+    },
+    {
+      title: t("popular_destinations.locations.dubai"),
+      image: dubai2,
+      bookings: 76,
+    },
+    {
+      title: t("popular_destinations.locations.saudi"),
+      image: dubai2,
+      bookings: 76,
+    },
+  ];
   return (
     <>
       <div className="bg-white py-20">
         {/* Title Section */}
         <div className="text-center  text-yellow-500 mb-10">
           <h2 className="text-lg  mb-2">
-            Bizning mashhur manzillarimiz
-          </h2>
+         {t("popular_destinations.title")}             </h2>
           <p className="text-gray-900 text-xl md:text-2xl">
-            Ushbu yo'nalishlar bilan haqiqatan ham o'ziga xos qiladigan
-            go'zallik, madaniyat va tajribalarni kashf eting.
+            {t("popular_destinations.subtitle")}
           </p>
         </div>
 

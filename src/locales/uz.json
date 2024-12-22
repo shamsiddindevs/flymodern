@@ -1,20 +1,20 @@
 {
-    "nav": {
-      "home": "Bosh sahifa",
-      "about": "Biz haqimizda",
-      "tours": "Turlar",
-      "contact": "Biz bilan aloqa"
-    },
-    "banner": {
-        "title": "Sayohat qilishni xohlaysizmi?",
-        "subtitle": "Sayohat orzularingizni haqiqiy voqelikka aylantiring, kashf qiling va unutilmas xotiralar yarating.",
-        "button_discover_more": "Ko'proq bilish",
-        "placeholder_name": "Ismingiz...",
-        "placeholder_location": "Manzilingiz...",
-        "placeholder_date": "Sana tanlang...",
-        "button_reservation": "Joy band qilish"
-      },
-      "popular_destinations": {
+  "nav": {
+    "home": "Bosh sahifa",
+    "about": "Biz haqimizda",
+    "tours": "Turlar",
+    "contact": "Biz bilan aloqa"
+  },
+  "banner": {
+    "title": "Sayohat qilishni xohlaysizmi?",
+    "subtitle": "Sayohat orzularingizni haqiqiy voqelikka aylantiring, kashf qiling va unutilmas xotiralar yarating.",
+    "button_discover_more": "Ko'proq bilish",
+    "placeholder_name": "Ismingiz...",
+    "placeholder_location": "Manzilingiz...",
+    "placeholder_date": "Sana tanlang...",
+    "button_reservation": "Joy band qilish"
+  },
+  "popular_destinations": {
     "title": "Bizning mashhur manzillarimiz",
     "subtitle": "Ushbu yo'nalishlar bilan haqiqatan ham o'ziga xos qiladigan go'zallik, madaniyat va tajribalarni kashf eting.",
     "locations": {
@@ -68,18 +68,21 @@
     "cards": {
       "dubai": {
         "title": "Dubayda hashamatni his eting",
+        "subtitle": "Hashamat va Innovatsiyalar Shahri",
         "description": "Dubayning osmono'par binolari, hashamatli xaridlari va cho'l sarguzashtlarining boyligini zavqlaning. Unga sayohat qilish unutilmas bo'ladi.",
         "button_learn": "Ko'proq bilish",
         "button_book": "Joy band qilish"
       },
       "turkey": {
         "title": "Turkiya madaniyatini kashf eting",
+        "subtitle": "Madaniyat va Tarixning Uyg'unligi",
         "description": "Turkiyaning qadimiy xarobalaridan tortib jonli bozorlariga qadar sizni hayratlantiradi. Unutilmas sayohat tajribasi uchun ajoyib joy.",
         "button_learn": "Ko'proq bilish",
         "button_book": "Joy band qilish"
       },
       "sharm_el_sheikh": {
         "title": "Sharm El-Sheykhda dam oling",
+        "subtitle": "Quyosh va Plyajlar Paradiysi",
         "description": "Sharm El-Sheykhning ajoyib plyajlari va marjon riflariga boring. Unutilmas dam olish uchun mukammal manzil.",
         "button_learn": "Ko'proq bilish",
         "button_book": "Joy band qilish"
@@ -113,9 +116,22 @@
       "support": "24/7 Qo'llab-quvvatlash"
     }
   },
+
   "exclusive_offers": {
     "title": "Eksklyuziv takliflar",
     "subtitle": "Orzuingizdagi ta'tilni rejalashtiring",
+   "guides_service": {
+      "title": "Tajribali gidlar xizmati",
+      "description": "Mukammal marshrut yaratish uchun sayohat bo'yicha mutaxassislarimizdan maslahat oling. Manzil takliflaridan sayohat tavsiyalarigacha, biz sizning sayohatingizni ajoyib qilish uchun shu yerdamiz."
+    },
+    "flexible_services": {
+      "title": "Moslashuvchan xizmatlar",
+      "description": "Bizning xizmatlarimiz sizning ehtiyojlaringizga moslashtirilgan. Biz moslashuvchan paketlar va ekspert tavsiyalarni taklif qilamiz, sayohatingizni alohida qilish uchun."
+    },
+    "support": {
+      "title": "24/7 Qo‘llab-quvvatlash",
+      "description": "Biz 24/7 qo‘llab-quvvatlashni ta'minlaymiz, shunda sayohatingiz muammosiz o'tadi. Har qanday yordam uchun istalgan vaqtda bog‘laning."
+    },
     "plans": {
       "essential_explorer": {
         "title": "Asosiy sayohatchi",
@@ -157,7 +173,8 @@
         "button_quote": "Taklifni oling"
       }
     }
-  },"reservation": {
+  },
+  "reservation": {
     "title": "Biz bilan joyingizni band qiling",
     "subtitle": "Biz bilan sayohatingizni rejalashtiring",
     "director": "Direktor: Nilufar Sadikova",
@@ -183,6 +200,4 @@
       "address_details": "Shayxontohur tumani, Jangoh ko'chasi, 1-qavat, 37-xonadon, Toshkent shahri"
     }
   }
-  }
-  
-  
+}

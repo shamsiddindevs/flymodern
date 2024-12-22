@@ -2,8 +2,10 @@ import React from "react";
 import {FaInstagram} from "react-icons/fa";
 import logo from "../assets/img/logo.png";
 import {Link} from "react-router-dom";
+import {useTranslation} from "react-i18next";
 
 const Footer = () => {
+  const {t} = useTranslation();
   return (
     <footer className=" py-20">
       <div className="container mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
@@ -21,8 +23,7 @@ const Footer = () => {
             <p className="text-sm font-semibold">AVIAKASSA VISA TOURISM</p>
           </div>
           <p className="text-gray-500 mt-4 text-center md:text-left">
-            Biz bilan dunyoni zabt eting. Sayohat tashkil qilishda eng yaxshi
-            hamkoringiz.
+            {t("footer.description")}
           </p>
           <a
             href="#"
@@ -41,28 +42,28 @@ const Footer = () => {
               <Link
                 to="/"
                 className="text-gray-600 hover:text-yellow-500">
-                Blog
+                {t("footer.useful_links.blog")}
               </Link>
             </li>
             <li>
               <a
                 href="#contact"
                 className="text-gray-600 hover:text-yellow-500">
-                Biz bilan Aloqa
+                {t("footer.useful_links.contact_us")}
               </a>
             </li>
             <li>
               <a
                 href="#about"
                 className="text-gray-600 hover:text-yellow-500">
-                Biz Haqimizda
+                {t("footer.useful_links.about_us")}
               </a>
             </li>
             <li>
               <Link
                 to="/"
                 className="text-gray-600 hover:text-yellow-500">
-                Maxfiylik Siyosati
+                {t("footer.useful_links.privacy_policy")}
               </Link>
             </li>
           </ul>
@@ -71,14 +72,13 @@ const Footer = () => {
         {/* Contact Information */}
         <div>
           <h3 className="text-lg font-semibold text-gray-800 mb-4">
-            Aloqa Ma'lumoti
+            {t("footer.contact_info.title")}
           </h3>
           <p className="text-gray-600 mb-2">
-            Keyingi sayohatingizga tayyor bo‘lib, shaxsiy sayohat yordam va
-            so‘rovnoma uchun biz bilan bog‘laning.
+           {t("footer.contact_info.description")}
           </p>
           <p className="text-gray-600">
-            <span className="font-semibold">Telefon:</span>{" "}
+            <span className="font-semibold">{t("footer.contact_info.phone")}</span>{" "}
             <a
               href="tel:+998951270090"
               className="text-yellow-500">
@@ -86,7 +86,9 @@ const Footer = () => {
             </a>
           </p>
           <p className="text-gray-600">
-            <span className="font-semibold">Email:</span>{" "}
+            <span className="font-semibold"> 
+              {t("footer.contact_info.email")}
+              </span>{" "}
             <a
               href="mailto:flymoderntravel@mail.ru"
               className="text-yellow-500">
@@ -94,8 +96,9 @@ const Footer = () => {
             </a>
           </p>
           <p className="text-gray-600">
-            <span className="font-semibold">Manzil:</span> Shayxontohur tumani,
-            Jangoh mavzesi, 1-etaj 37-xonadon, Toshkent shahri
+            <span className="font-semibold">
+             {t("footer.contact_info.address")}
+              </span> {t("footer.contact_info.address_details")}
           </p>
         </div>
       </div>

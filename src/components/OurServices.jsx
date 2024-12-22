@@ -1,38 +1,43 @@
 import React from 'react';
 import { FaUtensils, FaRoute, FaPowerOff } from 'react-icons/fa';
+import { useTranslation } from 'react-i18next';
 
-const services = [
-  {
-    icon: <FaUtensils className="text-blue-500 text-5xl mb-6 mx-auto p-3 border border-gray-500 box-content rounded-full" />,
-    title: 'Sayohat tajribalari',
-    description:
-      'Sizning xohishingizga moslashtirilgan yuqori sifatli tajribalarni tanlab, puxta ishlab chiqilgan sayohat marshrutlarini kashf eting. Mutaxassislar tomonidan tayyorlangan paketlarimiz unutilmas sarguzashtlarni kafolatlaydi.',
-  },
-  {
-    icon: <FaRoute className="text-blue-500 text-5xl mb-6 mx-auto p-3 border border-gray-500 box-content rounded-full" />,
-    title: 'Eng yaxshi marshrutlar',
-    description:
-      'Sizning noyob qiziqishlaringiz va istaklaringizga mos keladigan to‘liq moslashtirilgan sayohat rejalardan rohatlaning. Biz sayohat intilishlaringizni aks ettiruvchi marshrutlar yaratishga ixtisoslashganmiz.',
-  },
-  {
-    icon: <FaPowerOff className="text-blue-500 text-5xl mb-6 mx-auto p-3 border border-gray-500 box-content rounded-full" />,
-    title: 'Tayyor sayohat yo‘nalishlari',
-    description:
-      'Bizning paketlarimiz qulaylik, sarguzasht va madaniy uyg‘unlikni ta’minlaydigan ajoyib sayohat tajribasini taklif etadi.',
-  },
-];
+
 
 const OurServices = () => {
+
+  const { t } = useTranslation();
+
+  const services = [
+    {
+      icon: <FaUtensils className="text-blue-500 text-5xl mb-6 mx-auto p-3 border border-gray-500 box-content rounded-full" />,
+      title: t("our_services.services.curated_experiences.title"),
+      description:
+        t("our_services.services.curated_experiences.description"),
+    },
+    {
+      icon: <FaRoute className="text-blue-500 text-5xl mb-6 mx-auto p-3 border border-gray-500 box-content rounded-full" />,
+      title: t("our_services.services.personalized_itineraries.title"),
+      description:
+        t("our_services.services.personalized_itineraries.description"),
+    },
+    {
+      icon: <FaPowerOff className="text-blue-500 text-5xl mb-6 mx-auto p-3 border border-gray-500 box-content rounded-full" />,
+      title: t("our_services.services.expert_packages.title"),
+      description:
+        t("our_services.services.expert_packages.description"), 
+    },
+  ];
   return (
     <div id='tours' className=" py-20">
       {/* Title Section */}
       
       <div className="text-center  text-yellow-500 mb-10 ">
           <h2 className="mb-3 text-lg">
-          Bizning xizmatlar
+         {t("our_services.title")}
           </h2>
           <p className="text-gray-900 text-lg md:text-2xl font-semibold">
-          Ishonch bilan kashf eting
+            {t("our_services.subtitle")}
           </p>
         </div>
 
