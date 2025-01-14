@@ -1,5 +1,4 @@
-import React, {useState} from "react";
-import {Link} from "react-router-dom";
+import  {useState} from "react";
 import logo from "../assets/img/logo.png";
 import uzb from "../assets/img/uzb.png";
 import eng from "../assets/img/eng.png";
@@ -10,6 +9,8 @@ import { useTranslation } from 'react-i18next';
 const Navbar = () => {
   const { i18n, t } = useTranslation();
   const lang = localStorage.getItem('language') || 'uz'; // Get language from local storage
+
+  
   
 
 
@@ -18,7 +19,7 @@ const Navbar = () => {
     localStorage.setItem('language', lng); // Save language to local storage
      // Close dropdown after selection
     document.getElementById("language").classList.toggle("hidden"); // Close dropdown after selection
-    document.getElementById("language2").classList.toggle("hidden"); // Close dropdown after selection
+   
   };
   
   const [isOpen, setIsOpen] = useState(false);

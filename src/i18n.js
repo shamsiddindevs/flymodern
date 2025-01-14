@@ -20,7 +20,8 @@ i18n
         fallbackLng: 'en', // Fallback language
         interpolation: {
             escapeValue: false, // React already escapes values
-        },
+        }
+
     });
 
 export default i18n;
