@@ -1,5 +1,5 @@
 
-import React, { useRef, useState } from 'react';
+import { useRef, useState } from 'react';
 import videoframe_0 from "../assets/img/videoframe_0.png";
 
 const VideoBanner = () => {
@@ -18,7 +18,7 @@ const VideoBanner = () => {
   };
 
   return (
-    <div className="relative w-full h-[560px] bg-gray-900 flex items-center justify-center">
+    <div id='video' className="relative w-full h-[560px] bg-gray-900 flex items-center justify-center">
       {/* Video */}
       <video
         ref={videoRef}

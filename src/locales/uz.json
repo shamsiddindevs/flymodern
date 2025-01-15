@@ -39,32 +39,32 @@
       "cheap_tickets": {
         "title": "Biz bilan arzon temir yo'l chiptalari",
         "subtitle": "Butun dunyo",
-        "description": "Temir yo'l sayohatlaringizni keng va sifatli qiling. Biz sizga arzon chiptalarni taklif qilamiz, bu esa sayohatingizni osonlashtiradi."
+        "description": "Temir yo'l sarguzashtiga kiring va kashf qiling dunyo bo'ylab yo'nalishlar. Bu go'zal bo'ladimi landshaftlar, gavjum shaharlar yoki madaniy toshlar, bizning temir yo'l xizmatlari noyob va qulay yo'lni taklif qiladi yer sharini aylanib o'tish. Go'zallikka sho'ng'ing turli madaniyatlar, barcha bizning orqali kirish mumkin keng temir yo'l tarmog'i. ."
       },
       "air_travel_deals": {
         "title": "Havo sayohatlari uchun qiziqarli takliflar",
         "subtitle": "Global manzillar",
-        "description": "Havo sayohatlaringizni oson va qiziqarli qiling. Bizning takliflarimiz sizga cheksiz imkoniyatlarni taqdim etadi."
+        "description": "Havodagi sarguzashtga boring va kashf qiling dunyo bo'ylab yo'nalishlar. Bu bo'ladimi hayajonli landshaftlar, jonli shaharlar yoki madaniy xazinalar, bizning aviakompaniya xizmatlari qulaylikni ta'minlaydi va dunyo bo'ylab sayohat qilishning ajoyib usuli. Suvga cho'mish o'zingizni turli madaniyatlar boyligida, barcha bizning keng qamrovli havo sayohatimiz orqali osongina kirish mumkin tarmoq. ."
       },
       "dubai": {
         "title": "Dubay",
         "subtitle": "Birlashgan Arab Amirliklari",
-        "description": "Dubay o'zining hashamatli hayoti va qiziqarli sayohat joylari bilan mashhur. Bu yerda siz unutilmas dam olishingiz mumkin."
+        "description": "Dubay — Birlashgan Arabistondagi shahar va amirlik Hashamatli xaridlari bilan mashhur Emirates zamonaviy arxitektura va jonli tungi hayot. 830 metr balandlikdagi Burj Xalifa minorasi hukmronlik qiladi shaharning osmono'par binolari. Uning bazasida Dubay joylashgan Jetlari va chiroqlari moslashtirilgan favvora musiqa. Dengizdagi sun'iy orollarda Atlantis, Palm, mehmonxona, suv parki va a dengiz hayvonlari parki."
       },
       "antalya": {
         "title": "Antaliya",
         "subtitle": "Turkiya",
-        "description": "Antaliya o'zining go'zal plyajlari va dam olish joylari bilan sayyohlar uchun eng yaxshi tanlovdir."
+        "description": "Antaliya Turkiyaning eng tez rivojlanayotgan shahri va Butun dunyodan sayyohlar uni kashf qilmoqdalar ajoyib plyajlarning ajoyib kombinatsiyasi va an'anaviy turk madaniyati. Bolalar yaxshi ko'radilar Beach Park, Aqualand uyi (rollercoaster sevgilining orzusi) va Delfinarium (uy delfinlar, dengiz sherlari va oq kitlar). Ishonch hosil qiling eski shahar markazini o'rganing va Hadrian darvozasini ko'ring."
       },
       "sharm_el_sheikh": {
         "title": "Sharm El-Sheykh",
         "subtitle": "Misr",
-        "description": "Sharm El-Sheykhning go'zal plyajlari va suv sportlari sizni jalb qiladi. Bu yerda siz ajoyib dam olishingiz mumkin."
+        "description": "SSharm al-Shayx - Sinaydagi turizm markazi Yarim orol va eng yaxshi sho'ng'in uchun uy dunyo. Ayniqsa, Rasning suv osti mo''jizalari Sharmni olib ketgan Muhammad milliy bog'i butunlay yangi daraja. Shaharda sho'ng'in joylari va ilg'or va havaskor g'avvoslarni jalb qiladigan kema halokatlari noyob kashf qilish uchun butun dunyodan Qizil dengiz tubidagi dengiz hayoti."
       },
       "istanbul": {
         "title": "Istanbul",
         "subtitle": "Turkiya",
-        "description": "Istanbulning tarixiy joylari va madaniy boyliklari sizni o'ziga jalb qiladi. Bu sayohat unutilmas bo'ladi."
+        "description": "Istanbul Turkiya va uning aholisi eng gavjum shahar madaniy, iqtisodiy va tarixiy markaz. Joylashgan tomonidan boʻlingan Turkiyaning shimoli-gʻarbiy qismida Bosfor boʻgʻozi Yevropa va Osiyo tomonlariga, qaysi Marmara va Qora dengizni bog'laydi. Bu shahar dunyodagi yagona shahar ikki qit'ada joylashgan."
       }
     }
   },
@@ -192,6 +192,7 @@
     "slogan": "AVIABILET VISA TURIZM",
     "description": "Dunyoni Fly Modern bilan kashf eting. Unutilmas sayohatlarni yaratishda ishonchli hamkoringiz bo'ling.",
     "useful_links": {
+      "title":"Foydali Havolalar",
       "blog": "Blog",
       "contact_us": "Biz bilan aloqa",
       "about_us": "Biz haqimizda",
@@ -204,6 +205,29 @@
       "email": "Email:",
       "address": "Manzil:",
       "address_details": "Shayxontohur tumani, Jangoh ko'chasi, 1-qavat, 37-xonadon, Toshkent shahri"
+    }
+  },
+  "modal":{
+    "book":"Joy Band Qilish",
+    "plan":"Keling, keyingi sayohatingizni rejalashtiramiz",
+    "name":"Ismingiz",
+    "email":"Elektron pochta manzilingiz ",
+    "phone":"Telefon raqamingiz.",
+    "your_plan":" Sayohat rejangiz haqida aytib bering...",
+    "button_reservation": "Joy band qilish",
+    "help":[
+      "Biz bilan bog'laning",
+      "Sizning sayohatdagi hamrohingiz",
+      "Dam olish uchun sayohatni biz bilan rejalashtiring. Bizning jamoa sizga yordam berishga tayyor."
+
+    ],
+    "contact":{
+      "phone":"Telefon raqamingiz:",
+      "phone_details":"+998-77-153-41-41",
+      "email":"Email:",
+      "email_details":"flymoderntravel@mail.ru",
+      "address":"Manzi",
+      "address_details":"Shayxontohur tumani, Jangoh ko'chasi, 1-qavat, 37-xonadon, Toshkent shahri"
     }
   }
 }

@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import {useState} from "react";
 import {useTranslation} from "react-i18next";
 
 
@@ -40,7 +40,7 @@ const PlanYourTrip = () => {
           <p className="text-gray-600 mb-6">
            {t("exclusive_offers.guides_service.description")}
           </p>
-          <a href="#bron" className="btn-yel">{t("our_services.plan_trip.button_start")}</a>
+          <a href="#plantrip" className="btn-yel">{t("our_services.plan_trip.button_start")}</a>
         </div>
 
         {/* Right Section */}

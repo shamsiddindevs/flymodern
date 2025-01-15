@@ -1,4 +1,3 @@
-import React from "react";
 import { useTranslation } from "react-i18next";
 
 
@@ -26,7 +25,7 @@ const PricingPlans = () => {
     },
   ];
   return (
-    <div className=" py-20 ">
+    <div id="plantrip" className=" py-20 ">
       {/* Title Section */}
 
       <div className="text-center  text-yellow-500 mb-10 ">
@@ -63,9 +62,9 @@ const PricingPlans = () => {
               </ul>
 
               {/* Button */}
-              <button className=" btn-yel transition">
+              <a href="#bron2" className=" btn-yel transition" >
                 {t("exclusive_offers.plans.ultimate_wanderer.button_quote")}
-              </button>
+              </a>
             </div>
           </div>
         ))}

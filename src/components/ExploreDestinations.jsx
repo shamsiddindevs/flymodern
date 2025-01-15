@@ -1,6 +1,9 @@
-import React from "react";
+import { useState } from "react";
 import dubai2 from "../assets/img/dubai2.jpg";
+import istanbul from "../assets/img/istanbul.jpg";
+import sharm2 from "../assets/img/sharm2.jpg";
 import {useTranslation} from "react-i18next";
+import Modal from "./Modal";
 
 
 
@@ -21,16 +24,18 @@ const ExploreDestinations = () => {
       subtitle: t("explore_destinations.cards.turkey.subtitle"), 
       description:
         t("explore_destinations.cards.turkey.description"),
-      image: dubai2,
+      image: istanbul,
     },
     {
       title: t("explore_destinations.cards.sharm_el_sheikh.title"),
       subtitle: t("explore_destinations.cards.sharm_el_sheikh.subtitle"),
       description:
         t("explore_destinations.cards.sharm_el_sheikh.description"),
-      image: dubai2,
+      image: sharm2,
     },
   ];
+
+  const [isOpen, setIsOpen] = useState(false);
   return (
     <div
       id="about"
@@ -66,19 +71,20 @@ const ExploreDestinations = () => {
 
               {/* Buttons */}
               <div className="flex flex-wrap gap-4 justify-between">
-                <button className="btn-yel">
+                <a href="#video" className="btn-yel">
                   {t("explore_destinations.cards.dubai.button_learn")}
-                </button>
-                <a
-                  href="#bron2"
+                </a>
+                <button
+                  onClick={()=>setIsOpen(true)}
                   className="btn-yel text-gray-900 bg-slate-200 border-slate-200 hover:bg-slate-300 hover:border-slate-300 hover:text-gray-900">
                   {t("explore_destinations.cards.dubai.button_book")}
-                </a>
+                </button>
               </div>
             </div>
           </div>
         ))}
       </div>
+      {isOpen && <Modal setIsOpen={setIsOpen} />}
     </div>
   );
 };

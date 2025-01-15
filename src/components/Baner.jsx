@@ -134,9 +134,9 @@ const Banner = () => {
       {/* Modal */}
       {showModal && (
         <div className="fixed inset-0 flex items-center justify-center z-50">
-          <div className="absolute w-full h-full bg-black bg-opacity-50"></div>
+          <div className="absolute w-full h-full blur_overlay"></div>
           <div className="bg-white p-6 rounded shadow-lg z-10">
-            <p>{modalMessage}</p>
+            <p className="text-2xl my-5 text-gray-700 font-semibold">{modalMessage}</p>
             <button
               onClick={() => setShowModal(false)}
               className="mt-4 btn-yel"

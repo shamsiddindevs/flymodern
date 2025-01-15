@@ -37,36 +37,37 @@
     "title": "Explore destinations easily",
     "destinations": {
       "cheap_tickets": {
-        "title": "Cheap Railway Tickets With Us",
-        "subtitle": "Whole world",
-        "description": "Make your railway journeys comfortable and affordable. We offer cheap tickets to make your trips easy."
+        "title": "Cheap railway tickets with us",
+        "subtitle": "Worldwide",
+        "description": "Embark on a railway adventure and discover destinations around the world. Whether it's beautiful landscapes, bustling cities, or cultural landmarks, our railway services offer a unique and convenient way to explore the globe. Immerse yourself in the beauty of diverse cultures, all accessible through our extensive railway network."
       },
       "air_travel_deals": {
-        "title": "Discover Exciting Air Travel Deals",
-        "subtitle": "Global Destinations",
-        "description": "Make your air travel simple and exciting. Our deals offer you limitless opportunities for a great experience."
+        "title": "Exciting deals for air travel",
+        "subtitle": "Global destinations",
+        "description": "Embark on an aerial adventure and discover destinations worldwide. Whether it's exciting landscapes, vibrant cities, or cultural treasures, our airline services provide convenience and an amazing way to travel the world. Immerse yourself in the richness of diverse cultures, all easily accessible through our comprehensive air travel network."
       },
       "dubai": {
         "title": "Dubai",
         "subtitle": "United Arab Emirates",
-        "description": "Dubai is known for its luxurious lifestyle and interesting tourist attractions. Enjoy a perfect vacation here."
+        "description": "Dubai is a city and emirate in the United Arab Emirates known for luxury shopping, modern architecture, and a lively nightlife. The 830m-tall Burj Khalifa tower dominates the skyscraper-filled skyline. At its foot lies Dubai Fountain, with jets and lights choreographed to music. On artificial islands just offshore is Atlantis, The Palm, a resort with water and marine-animal parks."
       },
       "antalya": {
         "title": "Antalya",
         "subtitle": "Turkey",
-        "description": "Antalya is famous for its beautiful beaches and resorts. It is a perfect choice for travelers."
+        "description": "Antalya is Turkey's fastest-growing city, and tourists from around the world are discovering its fabulous combination of great beaches and traditional Turkish culture. Kids will love Beach Park, which features Aqualand (a waterslide-fanatic's dream) and Dolphinland (home to dolphins, sea lions and white whales). Make sure to explore the old town center and to see Hadrian's Gate."
       },
       "sharm_el_sheikh": {
         "title": "Sharm El-Sheikh",
         "subtitle": "Egypt",
-        "description": "The beaches and water sports of Sharm El-Sheikh will captivate you. Have an unforgettable vacation here."
+        "description": "Sharm el-Sheikh is the Sinai Peninsula's major tourism center and a world-class diving destination. In particular, the underwater wonders of Ras Muhammad National Park have put Sharm on the map. The town has plenty of dive sites and wreck diving opportunities that attract both advanced and novice divers from around the world to discover the underwater life of the Red Sea."
       },
       "istanbul": {
         "title": "Istanbul",
         "subtitle": "Turkey",
-        "description": "The historical sites and cultural richness of Istanbul will fascinate you. This trip will be unforgettable."
+        "description": "Istanbul is Turkey's most populous city and its cultural, economic, and historical center. Located in the northwest of Turkey, straddling the Bosphorus strait, it extends both on the European and Asian sides, connecting the Black Sea and the Sea of Marmara. It is the only city in the world situated on two continents."
       }
     }
+
   },
   "explore_destinations": {
     "title": "Explore Our Destinations",
@@ -189,9 +190,10 @@
   },
   "footer": {
     "logo_text": "Fly Modern",
-    "slogan": "AVIATICKETS VISA TOURISM",
-    "description": "Explore the world with Fly Modern, your trusted partner in creating unforgettable journeys.",
+    "slogan": "AIRLINE TICKETS VISA TOURISM",
+    "description": "Discover the world with Fly Modern. Be our trusted partner in creating unforgettable journeys.",
     "useful_links": {
+      "title":"Useful links",
       "blog": "Blog",
       "contact_us": "Contact Us",
       "about_us": "About Us",
@@ -199,11 +201,34 @@
     },
     "contact_info": {
       "title": "Contact Information",
-      "description": "Ready to embark on your next adventure? Contact us for personalized travel assistance and inquiries.",
+      "description": "Ready to start your next journey? Contact us for specialized travel assistance.",
       "phone": "Phone:",
       "email": "Email:",
       "address": "Address:",
+      "address_details": "Shaykhontohur district, Jangoh street, 1st floor, apartment 37, Tashkent city"
+    }
+  },
+  "modal": {
+    "book": "Book Now",
+    "plan": "Let's plan your next trip",
+    "name": "Your Name",
+    "email": "Your Email Address",
+    "phone": "Your Phone Number",
+    "your_plan": "Tell us about your travel plans...",
+    "button_reservation": "Make a Reservation",
+    "help": [
+      "Contact Us",
+      "Your Travel Companion",
+      "Plan your vacation trip with us. Our team is ready to assist you."
+    ],
+    "contact": {
+      "phone": "Phone:",
+      "phone_details": "+998-77-153-41-41",
+      "email": "Email:",
+      "email_details": "flymoderntravel@mail.ru",
+      "address": "Address",
       "address_details": "Shaykhontohur district, Jangoh avenue, 1st floor, house 37, Tashkent city"
     }
   }
+  
 }

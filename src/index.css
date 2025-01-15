@@ -2,11 +2,29 @@
 @tailwind components;
 @tailwind utilities;
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
-@layer components{
-    .btn-yel{
-        @apply bg-yellow-500 text-white px-6 py-3 font-semibold  shadow-md hover:bg-transparent border border-yellow-500 hover:text-yellow-500 transition
-    }
+@layer components {
+  .btn-yel {
+    @apply bg-yellow-500 text-white px-6 py-3 font-semibold  shadow-md hover:bg-transparent border border-yellow-500 hover:text-yellow-500 transition;
+  }
+}
+
+.blur_overlay {
+  background: rgba(255, 255, 255, 0.15);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.blur_overlay_dark {
+  background: rgba(0, 0, 0, 0.3);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
 }
