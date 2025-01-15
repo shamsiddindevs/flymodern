@@ -12,7 +12,13 @@
     "placeholder_name": "Your name...",
     "placeholder_location": "Type location...",
     "placeholder_date": "Pick a date...",
-    "button_reservation": "Make a reservation"
+    "button_reservation": "Make a reservation",
+    "modal":{
+      "error": " 🔁 Please try again ",
+      "fail": " ❌ Problem sending message! ",
+      "success":" ✅ We will contact you soon. Thank you! "
+    }
+
   },
   "popular_destinations": {
     "title": "Our Popular Destinations",

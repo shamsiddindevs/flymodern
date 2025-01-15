@@ -1,5 +1,4 @@
-import React from "react";
-import dubai2 from "../assets/img/dubai2.jpg";
+
 import {useTranslation} from "react-i18next";
 const CaruselCard = ({destination}) => {
   const {t} = useTranslation();
@@ -7,12 +6,12 @@ const CaruselCard = ({destination}) => {
     
   return (
     <div
-      className="relative overflow-hidden rounded-lg shadow-md hover:shadow-lg transition duration-300">
+      className="relative overflow-hidden rounded-lg shadow-md hover:shadow-lg transition duration-300 h-full">
       {/* Background Image */}
       <img
         src={destination?.image}
         alt={destination?.title}
-        className="w-full h-40 object-cover"
+        className="w-full h-full object-cover"
       />
       {/* Overlay */}
       <div className="absolute inset-0 bg-black bg-opacity-10 flex flex-col justify-end p-4 text-white">

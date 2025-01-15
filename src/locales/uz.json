@@ -12,7 +12,13 @@
     "placeholder_name": "Ismingiz...",
     "placeholder_location": "Manzilingiz...",
     "placeholder_date": "Sana tanlang...",
-    "button_reservation": "Joy band qilish"
+    "button_reservation": "Joy band qilish",
+    "modal":{
+      "error":" 🔁 Iltimos yana urinib ko'ring",
+      "fail":" ❌ Xabar jo'natishda muammo mavjud ! ",
+      "success":" ✅ Biz tez orada siz bilan bog'lanamiz, rahmat!"
+    }
+
   },
   "popular_destinations": {
     "title": "Bizning mashhur manzillarimiz",
