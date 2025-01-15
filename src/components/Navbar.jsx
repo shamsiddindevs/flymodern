@@ -27,6 +27,7 @@ const Navbar = () => {
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
+    
   };
 
   const toggleLang = () => {
@@ -289,8 +290,16 @@ const Navbar = () => {
                 </button>
                 <ul
                   id="language2"
-                  className="absolute right-0 mt-2 w-20  bg-white shadow-lg rounded-md hidden ">
-                  <li onClick={()=>changeLanguage("uz")}  className="px-4 py-2 hover:bg-gray-100 cursor-pointer">
+                  className="absolute right-0 mt-2 w-20  bg-white shadow-lg rounded-md hidden" >
+                  <li onClick={()=>{changeLanguage("uz");
+                    toggleMenu();
+                    document
+                    .getElementById("language2")
+                    .classList.toggle("hidden");
+                    document
+                    .getElementById("mobileMenu")
+                    .classList.toggle("hidden")
+                  }}  className="px-4 py-2 hover:bg-gray-100 cursor-pointer">
                     <img
 
                       src={uzb}
@@ -298,7 +307,13 @@ const Navbar = () => {
                       className="h-10 mx-auto"
                     />
                   </li>
-                  <li  onClick={()=>changeLanguage("ru")}
+                  <li  onClick={()=>{changeLanguage("ru"); toggleMenu();
+                   document
+                   .getElementById("language2")
+                   .classList.toggle("hidden");
+                    document
+                    .getElementById("mobileMenu")
+                    .classList.toggle("hidden")}}
                    className="px-4 py-2 hover:bg-gray-100 cursor-pointer">
                     <img
                       src={russian}
@@ -306,7 +321,13 @@ const Navbar = () => {
                       className="h-10 mx-auto"
                     />
                   </li>
-                  <li onClick={()=>changeLanguage("en")}
+                  <li onClick={()=>{changeLanguage("en");toggleMenu();
+                   document
+                   .getElementById("language2")
+                   .classList.toggle("hidden");
+                    document
+                    .getElementById("mobileMenu")
+                    .classList.toggle("hidden")}}
                    className="px-4 py-2 hover:bg-gray-100 cursor-pointer">
                     <img
                       src={eng}
